@@ -43,7 +43,7 @@ inquirer.prompt([
 
     var filename = data.name.toLowerCase().split(' ').join('') + ".json";;
   
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
+    fs.appendFile(filename, JSON.stringify(data, null, '\t'), function(err) {
   
       if (err) {
         return console.log(err);
