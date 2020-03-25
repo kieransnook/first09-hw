@@ -2,9 +2,15 @@ var inquirer = require("inquirer");
 var fs = require('fs');
 
 inquirer.prompt([
+  {
+  type: "confirm",
+  message:"Generate readme Y/N?",
+  name: "generate",
+  generate: "READ.md"
+},
     {
         type: "input",
-        name: "name",
+        name: "title",
         message: "What is your project title?",
     },
     {
@@ -17,17 +23,15 @@ inquirer.prompt([
         name: "install",
         message: "What are the steps required to install your project?"
       },
-      {
-          type: "confirm",
-          message:"Generate readme Y/N?",
-          name: "generate"
-      },
+      
       {
         type: "input",
         name: "usage",
         message: "Provide instructions and examples for use.(Screenshots/gifs)",
-        default: "none"
+        default: "none",
+        
       },
+      
       
     //     type: "input",
     //     name: "",
@@ -35,15 +39,11 @@ inquirer.prompt([
     //   },
 
 
+    ]).then(function(data) {
 
-
-
-
-]).then(function(data) {
-
-    var filename = data.name.toLowerCase().split(' ').join('') + ".json";;
+    var filename = "README.md"
   
-    fs.appendFile(filename, JSON.stringify(data, null, '\t'), function(err) {
+    fs.appendFile(filename, JSON.stringify(data, '\n'), function(err) {
   
       if (err) {
         return console.log(err);

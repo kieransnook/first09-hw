@@ -1,6 +1,2 @@
-{
-	"name": "1234",
-	"description": "12345678",
-	"install": "abcd",
-	"generate": true
-}
+{"generate":true," title":"QWERTYUYTRE","description":"EWRTYTRE","install":"WQERTYUTR","usage":"none"}{"generate":true," title":"asd","description":"asd","install":"asd","usage":"asd"}{"generate":true,"title":"asd","description":"asd","install":"asd","usage":"none"}{"generate":true,"title":"asd","description":"asd","install":"asd","usage":"none"}
+{"generate":false,"title":"asd","description":"asd","install":"a","usage":"none"}undefined{}{}{"generate":true,"title":"asd","description":"asd","install":"asdas","usage":"d"}

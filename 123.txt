@@ -1,0 +1,7 @@
+{
+	" ": "123",
+	"name": "123",
+	"install": "123",
+	"generate": false,
+	"usage": "123"
+}
