@@ -1,0 +1,22 @@
+{
+  "name": "09-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kieransnook/09-HW.git"
+  },
+  "author": "Kieran Snook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kieransnook/09-HW/issues"
+  },
+  "homepage": "https://github.com/kieransnook/09-HW#readme",
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  }
+}
