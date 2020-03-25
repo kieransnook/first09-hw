@@ -21,14 +21,13 @@ inquirer.prompt([
           type: "confirm",
           message:"Generate readme Y/N?",
           name: "generate"
-      }
-
-    //   {
-    //     type: "input",
-    //     name: "usage",
-    //     message: "Provide instructions and examples for use.(Screenshots/gifs)",
-    //     default: "none"
-    //   },
+      },
+      {
+        type: "input",
+        name: "usage",
+        message: "Provide instructions and examples for use.(Screenshots/gifs)",
+        default: "none"
+      },
       
     //     type: "input",
     //     name: "",
@@ -42,7 +41,7 @@ inquirer.prompt([
 
 ]).then(function(data) {
 
-    var filename = data.name.toLowerCase().split(' ').join('') + ".md";
+    var filename = data.name.toLowerCase().split(' ').join('') + ".json";;
   
     fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
   

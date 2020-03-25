@@ -1,7 +1,6 @@
-# 09-HW
 {
-	"name": "reads",
-	"description": "no",
-	"install": "1 2 3 ",
+	"name": "1234",
+	"description": "12345678",
+	"install": "abcd",
 	"generate": true
 }
